@@ -1,38 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="profily">
+
+        <div class="profile">
             <div class="info">
                 <div class="text">
-                    <div class="title">Федосеев Никита</div>
-                    <div class="h3">Привет! Я дизайнер цифровых продуктов и web интерфейсов. Специализируюсь на проектировании пользовательских сценариев, работе с дизайн системой или гайдлайном продукта. Стараюсь максиально...</div>
+                    <div class="h0">Федосеев Никита</div>
+                    <div class="h3 subtitle">Привет! Я дизайнер цифровых продуктов и web интерфейсов. Специализируюсь на
+                        проектировании пользовательских сценариев, работе с дизайн системой или гайдлайном продукта.
+                        бла бла бла... И еще какой то текст для заполнения инфой.</div>
                 </div>
                 <div class="avatar">
-                    <circle r="215" cx="50%" yx="50%"></cycle>
+                    <img src="img/Character.gif">
                 </div>
             </div>
             <div class="links">
                 <div class="social">
-                    <img class="social_icon" src="/app/img/social/Github.svg" alt="">
-                    <img class="social_icon" src="/app/img/social/Medium.svg" alt="">
-                    <img class="social_icon" src="/app/img/social/Dribbble.svg" alt="">
-                    <img class="social_icon" src="/app/img/social/Codepen.svg" alt="">
+                    <a href=""><img class="social_icon" src="img/social/Github.svg" alt=""></a>
+                    <a href=""><img class="social_icon" src="img/social/Medium.svg" alt=""></a>
+                    <a href=""><img class="social_icon" src="img/social/Dribbble.svg" alt=""></a>
+                    <a href=""><img class="social_icon" src="img/social/Codepen.svg" alt=""></a>
                 </div>
-                <a href="" class="h3 button_link">Опыт работы</a>
+                <a href="" class="h3 button_link" style="color: #3224FF;">Опыт работы</a>
             </div>
         </div>
-    </div>
 
+        <!-- Jobs -->
+        <div class="jobs">
+            <div class="tab-title">
+                <div class="h1">Работы</div>
+                <div class="tab">
+                    <button class="tablinks h3" onclick="openServices(event, 'services')">Сервисы</button>
+                    <button class="tablinks h3" onclick="openSite(event, 'sites')">Сайты</button>
+                </div>
+            </div>
 
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+            <div class="cases" id="services">
+                <div class="case">
+                    <img src="img/Main/enSend_promo.png" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">CDP сервис рассылок </div>
+                        <div class="case-tags">
+                            <div class="tag h6">research</div>
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Юзабилити-тестирование и создание карты взаимодействия маркетолога
+                            с интерфейсом. Дизайн основных функций работы со сценариями и логики их взаимодействия.
+                            Проектирование настройки событий. Отрисовка набота иконок. </div>
+                        <div class="case-button">
+                            <a class="button h5" href="">Смотреть проект</a>
+                            <a class="button_link h5" href="">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="img/Main/enSend_promo.png" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">CDP сервис рассылок </div>
+                        <div class="case-tags">
+                            <div class="tag h6">research</div>
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Юзабилити-тестирование и создание карты взаимодействия маркетолога
+                            с интерфейсом. Дизайн основных функций работы со сценариями и логики их взаимодействия.
+                            Проектирование настройки событий. Отрисовка набота иконок. </div>
+                        <div class="case-button">
+                            <a class="button h5" href="">Смотреть проект</a>
+                            <a class="button_link h5" href="">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases" id="sites">
+                <div class="case">
+                    <img src="img/Main/enSend_promo.png" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">CDP сервис рассылок </div>
+                        <div class="case-tags">
+                            <div class="tag h6">research</div>
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Юзабилити-тестирование и создание карты взаимодействия маркетолога
+                            с интерфейсом. Дизайн основных функций работы со сценариями и логики их взаимодействия.
+                            Проектирование настройки событий. Отрисовка набота иконок. </div>
+                        <div class="case-button">
+                            <a class="button h5" href="">Смотреть проект</a>
+                            <a class="button_link h5" href="">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+
+        
+    </div><!-- Container -->
 </body>
+
 </html>

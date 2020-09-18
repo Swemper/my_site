@@ -1,2 +1,182 @@
 @import 'ui-kit.scss';
 
+//Profile
+.profile {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.subtitle {
+    padding-top: 24px;
+    max-width: 710px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+
+    .button_link {
+        padding-right: 45px;
+    }
+}
+
+.social {
+    .social_icon {
+        margin-right: 16px;
+    }
+}
+
+
+//Jobs--Tabs
+.tab-title {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 116px;
+}
+
+.tab {
+    overflow: hidden;
+    
+    button {
+        background-color: transparent;
+        border: 1px solid $color-blue;
+        color: $color-black;
+        padding: 9px 24px;
+
+        float: left;
+        cursor: pointer;
+
+        &:first-child {
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        &:last-child {
+            border-radius: 0px 4px 4px 0px;
+        }
+
+        &:hover {
+            background-color: $color-light-blue;
+        }
+
+        &.active {
+            background-color: $color-blue;
+            border: 1px solid $color-blue;
+            color: $color-white;
+        }
+    }
+
+}
+
+//Jobs--Cases
+.cases {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+}
+
+.case {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 100%;
+    margin-bottom: 48px;
+
+    img {
+        width: 525px;
+    }
+
+    .case-content {
+        display: flex;
+        flex-direction: column;
+        min-width: 525px;
+
+        .case-title {
+            padding-top: 0px;
+        }
+
+        .case-tags {
+            padding-top: 12px;
+        }
+
+        .case-subtitle {
+            padding-top: 24px;
+            max-width: 525px;
+        }
+
+        .case-button {
+            padding-top: 24px;
+
+            .button {
+                margin-right: 16px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+@media (max-width: 1120px) {
+    
+
+    .profile {
+        margin-top: 36px;
+    }
+
+    .avatar {
+        padding-bottom: 36px;
+
+        img {
+            max-width: 168px;
+        }
+    }
+
+    .links {
+        .button_link {
+            padding-right: 25px;
+        }
+    }
+
+    .case {
+        img {
+            width: 100%;
+        }
+
+        .case-content {
+            .case-title {
+                padding-top: 12px;
+            }
+            .case-subtitle {
+                max-width: 100%;
+            }
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 414px) {
+
+    .links {
+        .button_link {
+            padding-top: 32px;
+        }
+    }
+
+}
