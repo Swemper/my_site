@@ -17,4 +17,8 @@ function openList(evt, listName) {
 
 }
 
-openList(evt, sites);
+function openTab () {
+    document.getElementById("defaultOpen").click();
+}
+
+openTab();

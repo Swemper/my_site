@@ -32,7 +32,7 @@
                     <a href=""><img class="social_icon" src="img/social/Dribbble.svg" alt=""></a>
                     <a href=""><img class="social_icon" src="img/social/Codepen.svg" alt=""></a>
                 </div>
-                <a href="app/about.html" class="h3 button_link" style="color: #3224FF;">Опыт работы</a>
+                <a href="about.html" class="h3 button_link" style="color: #3224FF;">Опыт работы</a>
             </div>
         </div>
 
@@ -41,8 +41,8 @@
             <div class="tab-title">
                 <div class="h1">Работы</div>
                 <div class="tab">
-                    <button class="tablinks h3" onclick="openServices(event, 'services')">Сервисы</button>
-                    <button class="tablinks h3" onclick="openSite(event, 'sites')">Сайты</button>
+                    <button class="tablinks h3" onclick="openList(event, 'services')" id="defaultOpen">Сервисы</button>
+                    <button class="tablinks h3" onclick="openList(event, 'sites')">Сайты</button>
                 </div>
             </div>
 
@@ -66,20 +66,49 @@
                     </div>
                 </div>
                 <div class="case">
-                    <img src="img/Main/enSend_promo.png" alt="">
+                    <img src="img/Main/Segments_promo.png" alt="">
                     <div class="case-content">
-                        <div class="case-title h2">CDP сервис рассылок </div>
+                        <div class="case-title h2">Сегментация контактов</div>
                         <div class="case-tags">
-                            <div class="tag h6">research</div>
                             <div class="tag h6">UX</div>
+                            <div class="tag h6">ux-writing</div>
                             <div class="tag h6">UI</div>
                         </div>
-                        <div class="case-subtitle h4">Юзабилити-тестирование и создание карты взаимодействия маркетолога
-                            с интерфейсом. Дизайн основных функций работы со сценариями и логики их взаимодействия.
-                            Проектирование настройки событий. Отрисовка набота иконок. </div>
+                        <div class="case-subtitle h4">Написание текстов ко всем условиям сегментов. Проектирование логики добавления, изменения и взаимодействия условий. Дизайн других страниц, которые взаимодействуют с сегментами.</div>
                         <div class="case-button">
                             <a class="button h5" href="">Смотреть проект</a>
                             <a class="button_link h5" href="">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="img/Main/enPop_promo.png" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">Сервис попапов</div>
+                        <div class="case-tags">
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">ux-writing</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Написание текстов ко всем условиям сегментов. Проектирование логики добавления, изменения и взаимодействия условий. Дизайн других страниц, которые взаимодействуют с сегментами.</div>
+                        <div class="case-button">
+                            <a class="button h5" href="">Смотреть проект</a>
+                            <a class="button_link h5" href="">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="img/Main/Offerme (промо).jpg" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">Тендерная площадка</div>
+                        <div class="case-tags">
+                            <div class="tag h6">research</div>
+                            <div class="tag h6">ux</div>
+                            <div class="tag h6">ui-KIT</div>
+                        </div>
+                        <div class="case-subtitle h4">Проетирование основного функционала сервиса, заложенного в MVP: логин, профиль пользователя, каталог товаров, оформление тендера. Дизайн продающего лендинга и отрисовка логотипа.</div>
+                        <div class="case-button">
+                            <a class="button h5" href="">Смотреть проект</a>
                         </div>
                     </div>
                 </div>
@@ -104,14 +133,73 @@
                         </div>
                     </div>
                 </div>
+                <div class="case">
+                    <img src="img/Main/enSend_promo.png" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">CDP сервис рассылок </div>
+                        <div class="case-tags">
+                            <div class="tag h6">research</div>
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Юзабилити-тестирование и создание карты взаимодействия маркетолога
+                            с интерфейсом. Дизайн основных функций работы со сценариями и логики их взаимодействия.
+                            Проектирование настройки событий. Отрисовка набота иконок. </div>
+                        <div class="case-button">
+                            <a class="button h5" href="">Смотреть проект</a>
+                            <a class="button_link h5" href="">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div><!-- Jobs -->
 
-        </div>
+        <!-- Projects -->
+        <div class="projects">
+            <div class="h1">Свои проекты</div>
+            <div class="project_list">
+                <div class="project_item">
+                    <a class="project_title h2" href="https://google.com">IX Design System</a>
+                    <div class="project_subtitle h4">An easy way to populate Figma layers with JSON. The plugin can parse local or JSON files from URL link. You can populate text layers that you selected, or by name or string template.</div>
+                </div>
+                <div class="project_item">
+                    <a class="project_title h2" href="https://google.com">IX Design System</a>
+                    <div class="project_subtitle h4">An easy way to populate Figma layers with JSON. The plugin can parse local or JSON files from URL link. You can populate text layers that you selected, or by name or string template.</div>
+                </div>
+                <div class="project_item">
+                    <a class="project_title h2" href="https://google.com">IX Design System</a>
+                    <div class="project_subtitle h4">An easy way to populate Figma layers with JSON. The plugin can parse local or JSON files from URL link. You can populate text layers that you selected, or by name or string template.</div>
+                </div>
+            </div>
+        </div><!-- Projects -->
+
+        <!-- Articles -->
+        <div class="articles">
+            <div class="article_title h1">Статьи</div>
+            <div class="articles_list">
+                <a href="https://designpub.ru/dribbble-в-цифрах-b4314ce8f9ed" class="article_item h4">Dribbble в цифрах. Прокачать аккаунт с нуля, собрать базу подписчиков и получить первый заказ</a>
+                <a href="https://enpop.ru/blog/kak-menyalsya-interfejs-enpop-i-zachem-eto-bylo-nuzhno/" class="article_item h4">Как менялся интерфейс enPop и зачем это было нужно</a>
+            </div>
+        </div><!-- Articles -->
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="copyright h4">© 1995–2020, Федосеев Никита</div>
+            <div class="contacts">
+                <a href="" class="mail h4">n318.fedoseev@gmail.com</a>
+                <div class="footer_icons">
+                    <a class="footer_icon" href=""><img src="img/social/Facebook.svg" alt=""></a>
+                    <a class="footer_icon" href=""><img src="img/social/Medium.svg" alt=""></a>
+                    <a class="footer_icon" href=""><img src="img/social/Dribbble.svg" alt=""></a>
+                    <a class="footer_icon" href=""><img src="img/social/Github.svg" alt=""></a>
+                    <a class="footer_icon" href=""><img src="img/social/Behance.svg" alt=""></a>
+                </div>
+            </div>
+        </div><!-- Footer -->
 
         <script src="js/libs.min.js"></script>
         <script src="js/main.js"></script>
 
-        
     </div><!-- Container -->
 </body>
 

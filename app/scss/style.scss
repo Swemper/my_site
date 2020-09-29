@@ -58,6 +58,10 @@
         float: left;
         cursor: pointer;
 
+        &:focus {
+            outline: none;
+        }
+
         &:first-child {
             border-radius: 4px 0px 0px 4px;
         }
@@ -91,7 +95,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     min-width: 100%;
-    margin-bottom: 48px;
+    margin-bottom: 60px;
 
     img {
         width: 525px;
@@ -126,13 +130,103 @@
 
 }
 
+//My projects
+.projects {
+    margin-top: 96px;
+
+    .project_list {
+        margin-top: 36px;
+        display: flex;
+
+        .project_item {
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            .project_title {
+                display: block;
+                cursor: pointer;
+                text-decoration: none;
+
+                color: $color-blue;
+                padding-bottom: 12px;
+                border-bottom: 2px dotted $color-black;
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+
+//Articles
+.articles {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .article_title {
+        min-width: 340px;
+        margin-bottom: 36px;
+    }
+
+    .articles_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 710px;
+
+        .article_item {
+            display: block;
+            max-width: 340px;
+            color: $color-blue;
+            margin-bottom: 24px;
+
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+//Footer
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top: 1px solid $color-black;
+    margin-top: 72px;
+
+    .contacts {
+        display: flex;
+        align-items: center;
+        padding-right: 6px;
+
+        .mail {
+            color: $color-black;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-blue;
+            }
+        }
+
+        .footer_icons {
+            margin-left: 40px;
+
+            .footer_icon {
+                padding-left: 24px;
+            }
+        }
+    }
+}
 
 
 
 
 @media (max-width: 1120px) {
     
-
     .profile {
         margin-top: 36px;
     }
@@ -152,19 +246,41 @@
     }
 
     .case {
+
         img {
             width: 100%;
         }
 
         .case-content {
+            min-width: 100%;
+
             .case-title {
                 padding-top: 12px;
             }
             .case-subtitle {
                 max-width: 100%;
+                min-width: 320px;
+                padding-top: 12px;
+            }
+            .case-button {
+                padding-top: 20px;
             }
         }
     }
+
+    .article_item {
+        max-width: 300px;
+    }
+
+    .contacts {
+        padding-right: 0px;
+        display: block;
+
+        .footer_icon {
+            display: none;
+        }
+    }
+
 
 }
 
@@ -173,9 +289,65 @@
 
 @media (max-width: 414px) {
 
+    .avatar {
+        padding-bottom: 12px;
+
+        img {
+            max-width: 132px;
+        }
+    }
+
     .links {
+        margin-top: 24px;
+
         .button_link {
-            padding-top: 32px;
+            padding: 24px 0px 0px 0px;
+        }
+    }
+
+    .tab-title {
+        margin-top: 84px;
+    }
+
+    .tab {
+        button {
+            padding: 6px 16px;
+        }
+    }
+
+    .case_subtitle {
+        padding-top: 0px;
+    }
+
+    .projects {
+        margin-top: 48px;
+
+        .project_list {
+            flex-wrap: wrap;
+            margin-top: 24px;
+    
+            .project_item {
+                margin-bottom: 36px;
+            }
+        }
+    }
+
+
+    .articles {
+        margin-top: 24px;
+
+        .article_title {
+            margin-bottom: 24px;
+        }
+    }
+
+    .footer {
+        margin-top: 48px;
+
+        .contacts {
+            .mail {
+                display: none;
+            }
         }
     }
 
