@@ -1,0 +1,340 @@
+@import 'ui-kit.scss';
+
+.nav {
+    margin-top: 48px;
+    text-transform:uppercase;
+
+    a {
+        color: $color-blue;
+        text-decoration: none;
+    }
+
+    span {
+        padding-left: 3px;
+    }
+}
+
+.banner {
+    margin-top: 24px;
+    max-width: 100%;
+
+    img {
+        width: 1080px;
+        height: 432px;
+        margin: 0 auto;
+        position: absolute;
+    }
+
+    .info {
+        display: flex;
+        max-width: 710px;
+        margin: 0 auto;
+        padding-top: 300px;
+        position: relative;
+
+        .info_case {
+            background-color: $color-white;
+            border: 1px solid $color-black;
+            padding: 24px 30px 60px 20px;
+
+            .h2 {
+                color: $color-blue;
+                padding-bottom: 12px;
+            }
+
+            .info_tags {
+                padding-bottom: 12px;
+            }
+
+            .h4 {
+                max-width: 320px;
+            }
+        }
+
+        .info_add {
+            background-color: $color-white;
+            border: 1px solid $color-black;
+            border-left: none;
+            display: flex;
+            flex-direction: column;
+            min-width: 340px;
+
+            .info_one {
+                display: flex;
+                padding: 24px 0 24px 20px;
+                border-bottom: 1px solid $color-black;
+
+                .info_role {
+                   display: flex;
+                   flex-direction: column; 
+                   padding-right: 40px;
+                }
+
+                .info_year {
+                    display: flex;
+                    flex-direction: column; 
+                }
+            }
+
+            .info_two {
+                display: flex;
+                flex-direction: column;
+                padding: 24px 0 24px 20px;
+                border-bottom: 1px solid $color-black;
+            }
+
+            .info_three {
+                display: flex;
+                flex-direction: column;
+                padding: 24px 0 24px 20px;
+            }
+        }
+    }
+
+}
+
+.artical_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 710px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    .arcticle_img_one {
+            width: 710px;
+            height: 396px; 
+    }
+    
+    .arcticle_img_two {
+        width: 710px;
+        height: 432px; 
+    }
+
+    .hint {
+        color: $color-gray;
+        margin: 0 auto;
+        margin-bottom: 36px;
+    }
+
+    .quote {
+        background-color: $color-white;
+        border: 1px solid $color-black;
+        padding: 24px 30px;
+        margin-bottom: 36px;
+
+        ol {
+            margin-bottom: 0px;
+            padding-left: 20px;
+
+            li {
+                padding-bottom: 12px;
+
+                span {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+
+    ul {
+        li {
+            padding-bottom: 12px;
+        }
+    }
+
+    .alert {
+        display: flex;
+        background-color: $color-light-blue;
+        padding: 12px 20px;
+        border-radius: 8px;
+        margin-bottom: 24px;
+
+        img {
+            height: 24px;
+            padding-right: 10px;
+        }
+
+        span {
+            a {
+                text-decoration: none;
+                color: $color-blue;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+}
+
+//Footer
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-top: 1px solid $color-black;
+    margin-top: 72px;
+
+    .contacts {
+        display: flex;
+        align-items: center;
+        padding-right: 6px;
+
+        .mail {
+            color: $color-black;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-blue;
+            }
+        }
+
+        .footer_icons {
+            margin-left: 40px;
+
+            .footer_icon {
+                padding-left: 24px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+
+    .banner {
+        img {
+            width: 980px;
+            height: 392px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .banner {
+        margin-top: 12px;
+    
+        img {
+            width: 608px;
+            height: 264px;
+        }
+    
+        .info {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            padding-top: 264px;
+    
+            .info_case {
+                border-bottom: none;
+                padding: 24px 30px 30px 20px;
+
+                .h2 {
+                    color: $color-blue;
+                    padding-bottom: 12px;
+                    line-height: 32px;
+                    font-size: 22px;
+                }
+
+                .h4 {
+                    max-width: 600px;
+                }
+            }
+
+            .info_add {
+                border-left: 1px solid $color-black;
+            }
+        }
+    }
+
+    .artical_text {
+        
+        .arcticle_img_one {
+            width: 648px;
+            height: 360px;
+        }
+
+        .arcticle_img_two {
+            width: 630px;
+            height: 382px;
+        }
+
+        .arcticle_img_thee {
+            width: 650px;
+            height: 318px;
+        }
+    }
+
+    .footer_icon {
+        display: none;
+    }
+}
+
+
+@media (max-width: 414px) {
+
+    .nav {
+        margin-top: 24px;
+    }
+
+    .banner {
+    
+        img {
+            width: 320px;
+            height: 140px;
+        }
+    
+        .info {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            padding-top: 140px;
+    
+            .info_case {
+                border-bottom: none;
+                padding: 24px 30px 30px 20px;
+
+                .h4 {
+                    max-width: 280px;
+                }
+            }
+
+            .info_add {
+                border-left: 1px solid $color-black;
+                min-width: 320px;
+            }
+        }
+    }
+
+    .artical_text {
+        
+        .arcticle_img_one {
+            width: 300px;
+            height: 168px;
+        }
+
+        .arcticle_img_two {
+            width: 300px;
+            height: 194px;
+        }
+
+        .arcticle_img_thee {
+            width: 300px;
+            height: 144px;
+        }
+    }
+
+    .footer {
+        margin-top: 48px;
+
+        .contacts {
+            .mail {
+                display: none;
+            }
+        }
+    }
+}

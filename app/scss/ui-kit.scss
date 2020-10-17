@@ -7,6 +7,26 @@ $color-gray: #797979;
 $color-blue: #3224FF;
 $color-light-blue: #E1E3FF;
 
+.space12 {
+    margin-bottom: 12px;
+}
+
+.space24 {
+    margin-bottom: 24px;
+}
+
+.space36 {
+    margin-bottom: 36px;
+}
+
+.space48 {
+    margin-bottom: 48px;
+}
+
+.space60 {
+    margin-bottom: 60px;
+}
+
 .h0 {
     font-size: 48px;
     line-height: 48px;
@@ -104,8 +124,9 @@ $color-light-blue: #E1E3FF;
     fill: $color-white;
 
     &:hover {
-        background-color: $color-black;
-        fill: $color-white;
+        background-color: $color-light-blue;
+        border-color: $color-blue;
+        fill: $color-light-blue;
     }
 }
 
@@ -174,6 +195,10 @@ body {
         line-height: 24px;
         font-weight: 400;
         font-family: $main-font;
+    }
+
+    .h4 {
+        font-size: 14px;
     }
 
     .button {

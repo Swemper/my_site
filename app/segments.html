@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/segments-style.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="nav h5">
+            <a href="index.html">Главная</a>
+            <span>/ Сегментация контактов</span>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+            <img src="img/Segments/Сегменты (промо).jpg" alt="">
+            <div class="info">
+                <div class="info_case">
+                    <div class="h2">Сегментация контактов</div>
+                    <div class="info_tags">
+                        <div class="tag h6">research</div>
+                        <div class="tag h6">UX</div>
+                        <div class="tag h6">UI</div>
+                    </div>
+                    <div class="h4">Составление текстов ко всем условиям сегментов. Проектирование логики добавления, изменения и взаимодействия условий. Дизайн других страниц, которые взаимодействуют с сегментами.</div>
+                </div>
+                <div class="info_add">
+                    <div class="info_one">
+                        <div class="info_role">
+                            <span class="h5">Роль</span>
+                            <span class="h4">Дизайн, UX-тексты</span>
+                        </div>
+                        <div class="info_year">
+                            <span class="h5">Год</span>
+                            <span class="h4">2019</span>
+                        </div>
+                    </div>
+                    <div class="info_two">
+                        <span class="h5">Команда</span>
+                        <span class="h4">Дизайнер, проектный менеджер</span>
+                    </div>
+                    <div class="info_three">
+                        <span class="h5">Ссылка на сайт</span>
+                        <a href="" class="h4">enkod.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Banner -->
+
+        <div class="artical_text">
+            <span class="h5 space12">Небольшое введение</span>
+            <span class="h4 space60">Платформа enKod и ее сервисы расчитаны для b2b клиентов. Основная аудитория – маркетологи на стороне клиента и менеджеры с нашей стороны, которые помогают клиентам в технических вопросах платформы. На эти две группы пользователей я ориентировался при решении данной задачи.</span>
+
+            <span class="h1 space24">Задача и цели</span>
+            <span class="h4 space24">У маркетолога есть задача отсегментировать базу клиентов по некоторым свойствам (в платформе они называются“условия”), для дальнейшей работы с этим сегментом клиентов. Например: отправить рассылку всем контактам, кто подходит под условия сегмента, или добавить новые данные в карточку клиента.</span>
+            <span class="h4 space36">Условия различаются в зависимости от данных пользователя, поведению на сайте или покупательской активности. Их можно комбинировать и объединять в группы. Поэтому основной задачей было сделать функционал сегментов понятным для обеих групп пользователей, но прежде всего для менеджеров на стороне клиента.</span>
+            <span class="h5 space12">Бизнес задача</span>
+            <span class="h4 space24">Каждый из сервисов платформы может иметь сегменты, которые работают только с объектами этого сервиса (например: попапы). У клиента может быть куплен только один из сервисов, поэтом нужно учесть в интерфейсе эти ограничения.</span>
+            <span class="h5 space12">Задача на дизайн</span>
+            <span class="h4 space24">Функционал должен быть достаточно гибок, чтобы пользователь мог быстро менять условия сегмента, комбинировать, объединять и не терять контекст при дальнейшей работе с ними.</span>
+            <span class="h5 space12">Критерий успеха</span>
+            <span class="h4 space60">Маркетологи, без помощи менеджера на нашей стороне, могут составить нужный сегмент и дальше работать с ним в платформе. Обратную связь, насколько получилось добиться этой цели, мы получим так же от наших менеджеров.</span>
+            
+            <span class="h1 space24">Дизайн-процесс</span>
+            <span class="h5 space12">1. Опрос менеджеров</span>
+            <span class="h4 space24">У менеджеров, на нашей стороне и стороне клиента, уже был опыт работы с сегментами в других платформах. Поэтому я составил небольшой опрос в google forms, в котором посторался узнать про опыт работы с сегментами. Что бесит, а что прям вау. Получив ответы, я составил перечень “хотелок” и барьеров, которые есть в других платформах.</span>
+            <img src="img/Segments/QA.jpg" class="arcticle_img_one" alt="">
+            <span class="h6 space36 hint">часть опроса менеджеров из google forms</span>
+            <span class="h5 space12">2. Семантика условий</span>
+            <span class="h4 space24">Пржде чем начать проектировать интерфейс, я постарался правильно сформулировать условие. Большенство маркетологов гумманитарии, поэтому для начал формулируем задачу без привязки к интерфейсу.</span>
+            <div class="quote">
+                <span class="h5" style="color: #3224FF;">Хочу выбрать всех пользователей</span>
+                <ol class="h4">
+                    <li>Из Рязани</li>
+                    <li>У которых в корзине больше 4 товаров</li>
+                    <li>Которые смотрели текущую страницу на сайте больше 50 секунд</li>
+                </ol>
+            </div>
+            <span class="h4 space24">При составлении сценариев, я сформулировал несколько закономерностей. Каждое из условий содержит параметр, который мы можем изменить, а сами условия можем объединить в группы по похожим параметрам.</span>
+            <div class="quote">
+                <span class="h5" style="color: #3224FF;">Хочу выбрать всех пользователей</span>
+                <ol class="h4">
+                    <li>Пол <span>[женский]</span></li>
+                    <li>У которых в корзине <span>[меньше] [2]</span> товаров</li>
+                    <li>Которые <span>[были на сайте] [меньше] [3] [минут]</span></li>
+                </ol>
+            </div>
+            <span class="h4 space24">По итогу мы составили config-файл с перечнем всех возможных условий, сгруппированый по похожим признакам и принадлежности к тому или иному сервису. Для их комбинирования  мы решили добавить дополнительное условие, которое аналагично логическим операторам И, ИЛИ.</span>
+            <img src="img/Segments/Config.png" class="arcticle_img_two" alt="">
+            <span class="h6 space36 hint">config-файл с перечнем всех возможных условий</span>
+            <span class="h5 space12">3. Построение условий</span>
+            <span class="h4 space12">На этом этапе я продумал логику добавления условия и изменения его параметров. При выводите в дробдаун целого условия, без какой-либо группировки, пользователю будет сложно найти и его параметры. Поэтому был составлен ряд правил:</span>
+            <ul class="h4">
+                <li>При добавлении условия в сегмент, пользователь не видет его целиком;</li>
+                <li>Добавить вложенность для понимания контекста условий (multiselect menu);</li>
+                <li>Каждый пункт multiselect menu соответствует параметру, который можно изменить.</li>
+            </ul>
+            <div class="alert">
+                <img src="img/Exclamation point.png" alt="">
+                <span class="h4">На gif показан интерфейс до редизайна с новыми компонентами</span>
+            </div>
+            <img src="img/Segments/segments-app.gif" style="margin-bottom: 48px;" class="arcticle_img_thee" alt="">
+            <span class="h5 space12">4. Дизайн</span>
+            <span class="h4 space24">После проектирования всех условий и их взаимодействия, я приступил к визуальной части задачи. Помимо создания сегмента, я отрисовал экраны с табличным списком всех условий, экран с редактированием и деталями сегмента.</span>
+            <div class="alert">
+                <img src="img/figma-icon.svg" alt="">
+                <span class="h4">Все макеты можно посмотреть в фигме по этой <a href="" target="_blank">ссылке</a></span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="copyright h4">© 1995–2020, Федосеев Никита</div>
+            <div class="contacts">
+                <a href="" class="mail h4">n318.fedoseev@gmail.com</a>
+                <div class="footer_icons">
+                    <a class="footer_icon" href="https://www.facebook.com/nikfedoseev.tut" target="_blank"22222222><img src="img/social/Facebook.svg" alt=""></a>
+                    <a class="footer_icon" href="https://medium.com/@nikfedoseev" target="_blank"><img src="img/social/Medium.svg" alt=""></a>
+                    <a class="footer_icon" href="https://dribbble.com/nikfedoseev" target="_blank"><img src="img/social/Dribbble.svg" alt=""></a>
+                    <a class="footer_icon" href="https://codepen.io/your-work/" target="_blank"><img src="img/social/Codepen.svg" alt=""></a>
+                </div>
+            </div>
+        </div><!-- Footer -->
+    </div>
+</body>
+</html>

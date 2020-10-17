@@ -1,6 +1,163 @@
 @import 'ui-kit.scss';
+@import 'style.scss';
 
 .nav {
     margin-top: 48px;
-    padding-top: 48px;
+    text-transform:uppercase;
+
+    a {
+        color: $color-blue;
+        text-decoration: none;
+    }
+
+    span {
+        padding-left: 3px;
+    }
+}
+
+.me_about {
+    display: flex;
+    margin-top: 24px;
+
+    .me_text {
+        margin-left: 30px;
+
+        .me_text_paragraph {
+            padding-bottom: 24px;
+        }
+    }
+}
+
+.exp {
+
+    .exp_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 84px;
+
+        a {
+            background-color: $color-light-blue;
+            border-radius: 4px;
+        }
+    }
+
+    .exp_content {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+
+        .exp_item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 36px;
+            border-top: 1px dashed $color-black;
+            padding-top: 24px;
+            min-width: 100%;
+
+            &:last-child {
+                border-top: 2px solid $color-black;
+            }
+
+            .exp_title {
+                display: flex;
+                flex-direction: column;
+                
+                .exp_title_text {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 12px;
+    
+                    .h2 {
+                        color: $color-blue;
+                    }
+                }
+            }
+
+            .exp_description {
+                padding-left: 20px;
+
+                ul {
+                    max-width: 710px;
+                    padding-left: 0px;
+                }
+
+                li {
+                    padding-bottom: 24px;
+
+                    a {
+                        text-decoration: none;
+                        color: $color-blue;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 900px) {
+
+    .exp_content {
+
+        .exp_item {
+            flex-direction: column;
+            margin-top: 24px;
+            border-top: 1px dashed $color-black;
+            padding-top: 24px;
+
+            .exp_title {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .exp_description {
+                padding-left: 20px;
+
+                ul {
+                    min-width: 100%;
+                }
+
+                li {
+                    padding-bottom: 12px;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .me_about {
+        flex-direction: column;
+        margin-top: 24px;
+    
+        .me_text {
+            margin-left: 0px;
+            margin-top: 36px;
+    
+            .me_text_paragraph {
+                padding-bottom: 24px;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 414px) {
+
+    .exp {
+
+        .exp_head {
+            margin-top: 36px;
+        }
+    }
 }
