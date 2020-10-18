@@ -7,22 +7,22 @@ let rename = require('gulp-rename');
 let sass = require('gulp-sass');
 
 gulp.task('scss', function () {     //пишем таск для gulpa на компеляцию, scss - имя команды
-    return gulp.src('app/scss/**/*.scss')     //находим все файлы, которые нужно конвертировать (*.scss - берем все файлы с расширением scss; **/*.scss - находит все папки с этим фалом)
+    return gulp.src('docs/scss/**/*.scss')     //находим все файлы, которые нужно конвертировать (*.scss - берем все файлы с расширением scss; **/*.scss - находит все папки с этим фалом)
         .pipe(sass({ outputStyle: 'compressed' }))     //метод pipe имеет плагины, мы выбираем sass(); {outputStyle: 'compressed'} – сжимает файлы в коде
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('app/css'))     //прописываем, куда будут переходить скомпилированные файлы
+        .pipe(gulp.dest('docs/css'))     //прописываем, куда будут переходить скомпилированные файлы
         .pipe(browserSync.reload({ stream: true }))
 });
 
 
 //Таск для автоматич перезагрузки стр при изменен html
 gulp.task('html', function () {
-    return gulp.src('app/*.html')
+    return gulp.src('docs/*.html')
         .pipe(browserSync.reload({ stream: true }))
 });
 
 gulp.task('script', function () {
-    return gulp.src('app/js/*.js')
+    return gulp.src('docs/js/*.js')
         .pipe(browserSync.reload({ stream: true }))
 });
 
@@ -38,7 +38,7 @@ gulp.task('js', function () {
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('app/js'))
+        .pipe(gulp.dest('docs/js'))
         .pipe(browserSync.reload({ stream: true }))
 })
 
@@ -49,7 +49,7 @@ let browserSync = require('browser-sync');
 gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
-            baseDir: "app/"
+            baseDir: "docs/"
         }
     });
 });
@@ -57,14 +57,12 @@ gulp.task('browser-sync', function () {
 
 //Таск для автоматического выполнения команды gulp scss
 gulp.task('watch', function () {
-    gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'))     //слежение за файлами, при выполнении таска. Если ы них будут изменения, запускаем таск scss
-    gulp.watch('app/*.html', gulp.parallel('html'))
-    gulp.watch('app/js/*.js', gulp.parallel('script'))
+    gulp.watch('docs/scss/**/*.scss', gulp.parallel('scss'))     //слежение за файлами, при выполнении таска. Если ы них будут изменения, запускаем таск scss
+    gulp.watch('docs/*.html', gulp.parallel('html'))
+    gulp.watch('docs/js/*.js', gulp.parallel('script'))
 });
 
 
 //Таск для параллельной работы нескольких тасков
 gulp.task('default', gulp.parallel('scss', 'js', 'browser-sync', 'watch'))     //defoult - ключевое слово которое говорит: - при написании gulp в консоли, выполняем gulp.parallel
-
-
 

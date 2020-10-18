@@ -1,11 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <div class="profile">
+            <div class="info">
+                <div class="text">
+                    <div class="h0">Федосеев Никита</div>
+                    <div class="h3 subtitle">Привет! Я занимаюсь дизайном цифровых продуктов. Люблю проектировать интерфейсы, создавать сценарии взаимодействия, 
+                        работать с дизайн системой или гайдлайном продукта. Делаю интерфейсы понятными для пользователя и реализуемыми в разработке.</div>
+                </div>
+                <div class="avatar">
+                    <img src="img/Character.gif">
+                </div>
+            </div>
+            <div class="links">
+                <div class="social">
+                    <a href="https://github.com/Swemper" target="_blank"><img class="social_icon" src="img/social/Github.svg" alt=""></a>
+                    <a href="https://medium.com/@nikfedoseev" target="_blank"><img class="social_icon" src="img/social/Medium.svg" alt=""></a>
+                    <a href="https://dribbble.com/nikfedoseev" target="_blank"><img class="social_icon" src="img/social/Dribbble.svg" alt=""></a>
+                    <a href="https://codepen.io/your-work/" target="_blank"><img class="social_icon" src="img/social/Codepen.svg" alt=""></a>
+                </div>
+                <a href="about.html" class="h3 button_link" style="color: #3224FF;">Опыт работы</a>
+            </div>
+        </div>
+
+        <!-- Jobs -->
+        <div class="jobs">
+            <div class="tab-title">
+                <div class="h1">Работы</div>
+                <div class="tab">
+                    <button class="tablinks h3" onclick="openList(event, 'services')" id="defaultOpen">Сервисы</button>
+                    <button class="tablinks h3" onclick="openList(event, 'sites')">Сайты</button>
+                </div>
+            </div>
+
+            <div class="cases" id="services">
+                <div class="case">
+                    <img src="img/Main/enSend_promo.jpg" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">CDP сервис рассылок </div>
+                        <div class="case-tags">
+                            <div class="tag h6">research</div>
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Работал над дизайном всего сервиса, основные функции которого: 
+                            создание сообщений по различным каналам связи, сценарии (цепочи сообщений), 
+                            пресеты и фильтрация в списке сообщений. Провел несколько иследований и сделал конкурентный анализ.
+                            </div>
+                        <div class="case-button">
+                            <a class="button h5" href="https://readymag.com/u27340232/2104093/" target="_blank">Смотреть проект</a>
+                            <a class="button_link h5" href="https://ensend.io" target="_blank">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="img/Main/Segments_promo.jpg" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">Сегментация контактов</div>
+                        <div class="case-tags">
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">ux-writing</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Написал тексты ко всем условиям сегментов. Спроектировал логику добавления, изменения и взаимодействия условий. 
+                            Сделал дизайн других страниц, которые взаимодействуют с сегментами.</div>
+                        <div class="case-button">
+                            <a class="button h5" href="segments.html">Смотреть проект</a>
+                            <a class="button_link h5" href="">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="img/Main/enPop_promo.jpg" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">Сервис попапов</div>
+                        <div class="case-tags">
+                            <div class="tag h6">UX</div>
+                            <div class="tag h6">ux-writing</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Редизайн всего сервиса в соответствии с другими сервисами платформы enKod.
+                            Проектирование новых функций сервиса: сплит-тест попапов, статистика показов.
+                        </div>
+                        <div class="case-button">
+                            <a class="button h5" href="">Смотреть проект</a>
+                            <a class="button_link h5" href="https://enpop.ru" target="_blank">Сайт продукта</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="img/Main/Offerme (промо).jpg" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">Тендерная площадка</div>
+                        <div class="case-tags">
+                            <div class="tag h6">research</div>
+                            <div class="tag h6">ux</div>
+                            <div class="tag h6">ui-KIT</div>
+                        </div>
+                        <div class="case-subtitle h4">Спроектировал основной функционал сервиса, заложенный в MVP: логин, профиль пользователя, каталог товаров, оформление тендера. Сделал дизайн для продающего лендинга и отрисовал логотип.</div>
+                        <div class="case-button">
+                            <a class="button h5" href="offerme.html">Смотреть проект</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases" id="sites">
+                <div class="case">
+                    <img src="img/Main/SkillFactory.jpg" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">Сайт для SkillFactory</div>
+                        <div class="case-tags">
+                            <div class="tag h6">tilda</div>
+                            <div class="tag h6">ui</div>
+                        </div>
+                        <div class="case-subtitle h4">Юзабилити-тестирование и создание карты взаимодействия маркетолога
+                            с интерфейсом. Дизайн основных функций работы со сценариями и логики их взаимодействия.
+                            Проектирование настройки событий. Отрисовка набота иконок. </div>
+                        <div class="case-button">
+                            <a class="button h5" href="https://skillfactory.ru" target="_blank">Смотреть сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="case">
+                    <img src="img/Main/Lanch_market.jpg" alt="">
+                    <div class="case-content">
+                        <div class="case-title h2">Сайт Ланч Маркет</div>
+                        <div class="case-tags">
+                            <div class="tag h6">web</div>
+                            <div class="tag h6">animation</div>
+                            <div class="tag h6">UI</div>
+                        </div>
+                        <div class="case-subtitle h4">Дизайн сайта по доставке обедов и кейтеринга. В рамках проекта сделал анимированные иконки и отрисовал дополнительные страницы сайта</div>
+                        <div class="case-button">
+                            <a class="button h5" href="https://lunchmarket.ru/landing/" target="_blank">Смотреть сайт</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Jobs -->
+
+        <!-- Projects -->
+        <div class="projects">
+            <div class="h1">Свои проекты</div>
+            <div class="project_list">
+                <div class="project_item">
+                    <a class="project_title h2" href="https://google.com">IX Design System</a>
+                    <div class="project_subtitle h4">An easy way to populate Figma layers with JSON. The plugin can parse local or JSON files from URL link. You can populate text layers that you selected, or by name or string template.</div>
+                </div>
+                <div class="project_item">
+                    <a class="project_title h2" href="https://google.com">IX Design System</a>
+                    <div class="project_subtitle h4">An easy way to populate Figma layers with JSON. The plugin can parse local or JSON files from URL link. You can populate text layers that you selected, or by name or string template.</div>
+                </div>
+                <div class="project_item">
+                    <a class="project_title h2" href="https://google.com">IX Design System</a>
+                    <div class="project_subtitle h4">An easy way to populate Figma layers with JSON. The plugin can parse local or JSON files from URL link. You can populate text layers that you selected, or by name or string template.</div>
+                </div>
+            </div>
+        </div><!-- Projects -->
+
+        <!-- Articles -->
+        <div class="articles">
+            <div class="article_title h1">Статьи</div>
+            <div class="articles_list">
+                <a href="https://designpub.ru/dribbble-в-цифрах-b4314ce8f9ed" class="article_item h4">Dribbble в цифрах. Прокачать аккаунт с нуля, собрать базу подписчиков и получить первый заказ</a>
+                <a href="https://enpop.ru/blog/kak-menyalsya-interfejs-enpop-i-zachem-eto-bylo-nuzhno/" class="article_item h4">Как менялся интерфейс enPop и зачем это было нужно</a>
+            </div>
+        </div><!-- Articles -->
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="copyright h4">© 1995–2020, Федосеев Никита</div>
+            <div class="contacts">
+                <a href="" class="mail h4">n318.fedoseev@gmail.com</a>
+                <div class="footer_icons">
+                    <a class="footer_icon" href="https://www.facebook.com/nikfedoseev.tut" target="_blank"22222222><img src="img/social/Facebook.svg" alt=""></a>
+                    <a class="footer_icon" href="https://medium.com/@nikfedoseev" target="_blank"><img src="img/social/Medium.svg" alt=""></a>
+                    <a class="footer_icon" href="https://www.behance.net/nikfedoseev" target="_blank"><img src="img/social/Behance.svg" alt=""></a>
+                    <a class="footer_icon" href="https://dribbble.com/nikfedoseev" target="_blank"><img src="img/social/Dribbble.svg" alt=""></a>
+                    <a class="footer_icon" href="https://codepen.io/your-work/" target="_blank"><img src="img/social/Codepen.svg" alt=""></a>
+                </div>
+            </div>
+        </div><!-- Footer -->
+
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </div><!-- Container -->
 </body>
+
 </html>
